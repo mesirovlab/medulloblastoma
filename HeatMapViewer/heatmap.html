@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html
+      xmlns="http://www.w3.org/1999/xhtml" 
+      xml:lang="en" 
+      version="XHTML+RDFa 1.0" 
+      dir="ltr" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" 
+      xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+      xmlns:og="http://ogp.me/ns#" 
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+      xmlns:sioc="http://rdfs.org/sioc/ns#" 
+      xmlns:sioct="http://rdfs.org/sioc/types#" 
+      xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+      class="js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//code.jquery.com/ui/1.11.4/themes/redmond/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="css/spectrum.css"/>
+    <link href="css/heatmap.css" rel="stylesheet" type="text/css"/>
+    <link href="../medulloblastoma_files/pubs.css" rel="newer stylesheet" type="text/css">
+    
+
+    <!-- You must include the jQuery library -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/gp_lib.js"></script>
+    <script type="text/javascript" src="js/gpUtil.js"></script>
+    <script type="text/javascript" src="js/FileSaver.js"></script>
+    <script type="text/javascript" src="js/html2canvas.js"></script>
+    <script type="text/javascript" src="js/canvas-to-blob.js"></script>
+    <script type="text/javascript" src="js/canvas2svg.js"></script>
+    <script type="text/javascript" src="js/rgbcolor.js"></script>
+    <script type="text/javascript" src="js/canvg.js"></script>
+    <script src="js/spectrum.js"></script>
+    <script type="text/javascript" src="js/jheatmap-1.0.0.js"></script>
+    <script type="text/javascript" src="js/gpHeatmapLib.js"></script>
+    <script type="text/javascript" src="js/heatmap.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="100">    
+<!-- Nav Bar -->
+<div id="nav">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#myPage">UCSD</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="..">Home</a></li>
+                <li><a href="../about/">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!-- Title Container -->
+<div id="title">
+    <div id="outer" class="container-fluid">
+        <div class="container-fluid text-center">
+            <h1>
+                Heatmap Viewer
+            </h1>
+            <hr>
+            <br>
+            <p>
+                Medulloblastoma Test Set Expression Dataset
+            </p>
+        </div>
+    </div>
+</div>    
+
+<div id = "hmv">
+    <div id="outer" class="container-fluid">
+        <div class = "container-fluid">
+            <div id="fileLoaded">
+            </div>
+            <hr>
+            <div id="toolBarHeatmapMain">
+                <div id="toolbar">
+                    <button id="zoomIn" title="Zoom In" ><i class="fa fa-plus fa-lg"></i></button>
+                    <button id="zoomOut" title="Zoom Out" ><i class="fa fa-minus fa-lg"></i></button>
+                    <button id="resetZoom" title="Reset Zoom" >100%</button>
+                    <button id="reload" title="Reload" ><i class="fa fa-refresh fa-lg"></i></button>
+                    <button id="options" title="Options" ><i class="fa fa-cog fa-lg"></i></button>
+                    <button id="saveImage" title="Save Image" ><i class="fa fa-save fa-lg"></i></button>
+                    <button id="addLabels" title="Add/Edit labels" ><i class="fa fa-barcode fa-lg"></i></button>
+                    <button id="find" title="Find" ><i class="fa fa-search fa-lg"></i></button>
+                    <button id="help" title="Help" ><i class="fa fa-question-circle fa-lg"></i></button>
+                </div>
+                <div id="heatmap"></div>
+            </div>
+        </div>   
+    </div>
+</div>
+    
+<!-- Footer -->
+<div id="outer" class="container-fluid">
+    <footer class="text-center">
+         <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+             <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <br>
+    </footer>
+</div>
+    
+</body>
+</html>
