@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="hg19" hasGeneTrack="true" hasSequenceTrack="true" locus="All" nextAutoscaleGroup="2" version="8">
+    <Resources>
+        <Resource path="http://mesirovlab.org/medulloblastoma/cho/cho_files//igv/MD_CN.cbs"/>
+    </Resources>
+</Session>
